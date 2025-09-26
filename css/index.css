@@ -1,0 +1,1628 @@
+body {
+	margin: 0;
+}
+
+/* — RESET BÁSICO — */
+html, body { margin: 0; overflow-x: hidden; }
+
+/* — ARTBOARD ESCALADO POR LARGURA — */
+.stage {
+  position: relative;
+  width: 100vw;
+  /* 5525 / 1920 = 2.877604...  (altura visual = escala * 5525) */
+  height: calc(2.8776041667 * 100vw); 
+}
+
+.stage > .desktop-2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1920px;   /* tamanho do layout de Figma */
+  height: 5525px;
+  transform-origin: top center;
+  transform: translateX(-50%) scale(calc(100vw / 1920));
+  overflow: visible !important;   /* não deixe as sombras/blur serem cortados */
+  will-change: transform;          /* suaviza a animação no resize */
+}
+
+
+.desktop-2 {
+  	width: 100%;
+  	position: relative;
+  	background-color: #000;
+  	height: 5525px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 16px;
+  	color: #fff;
+  	font-family: Poppins;
+}
+.desktop-2-child {
+  	position: absolute;
+  	top: 920px;
+  	left: -5px;
+  	background-color: #202020;
+  	width: 1933px;
+  	height: 4439px;
+}
+.dollar-6049139-1-icon {
+  	position: absolute;
+  	top: 1607px;
+  	left: 881px;
+  	width: 32px;
+  	height: 32px;
+}
+.button-wrapper {
+  	position: absolute;
+  	width: calc(100% - 1559px);
+  	top: 1708px;
+  	right: 779px;
+  	left: 780px;
+  	height: 63px;
+  	text-align: center;
+  	font-size: 14px;
+  	font-family: 'Monument Extended';
+}
+.button {
+  	position: absolute;
+  	width: 100%;
+  	top: 0px;
+  	right: 0px;
+  	left: 0px;
+  	box-shadow: 0px 0px 70px rgba(26, 226, 118, 0.5);
+  	border-radius: 45px;
+  	background: linear-gradient(90.63deg, #0f5641, #217d44 57.26%, #2aba73 92.01%);
+  	height: 63px;
+  	cursor: pointer;
+}
+.quero-comear-agora {
+  	position: absolute;
+  	top: 13px;
+  	left: 11px;
+  	letter-spacing: 2px;
+  	line-height: 24px;
+  	text-transform: uppercase;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 340px;
+  	height: 38px;
+}
+.desktop-2-item {
+  	position: absolute;
+  	top: -80px;
+  	left: 932px;
+  	border-radius: 50%;
+  	background: radial-gradient(50% 50% at 50% 50%, rgba(58, 255, 146, 0.45), rgba(158, 255, 158, 0));
+  	width: 1077.6px;
+  	height: 1077.6px;
+}
+.apresentacao-blurpng-icon {
+  	position: absolute;
+  	height: 25.81%;
+  	width: 62.24%;
+  	top: -4.11%;
+  	right: 71.35%;
+  	bottom: 78.3%;
+  	left: -33.59%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.button-container {
+  	position: absolute;
+  	width: calc(100% - 1559px);
+  	top: 517px;
+  	right: 955px;
+  	left: 604px;
+  	height: 63px;
+  	text-align: center;
+  	font-size: 14px;
+  	font-family: 'Monument Extended';
+}
+.se-torne-um-container {
+  	position: absolute;
+  	top: 13px;
+  	left: 11px;
+  	letter-spacing: 2px;
+  	line-height: 24px;
+  	text-transform: uppercase;
+  	display: flex;
+  	align-items: center;
+  	width: 340px;
+  	height: 38px;
+}
+.se-torne-um-container2 {
+  	width: 100%;
+}
+.se-torne-um {
+  	margin: 0;
+}
+.unnamed-1-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 1065px;
+  	width: 855px;
+  	height: 888px;
+  	object-fit: cover;
+  	opacity: 0.59;
+}
+.agrupar-1-1 {
+  	position: absolute;
+  	top: -5px;
+  	left: -3px;
+  	width: 618px;
+  	height: 888px;
+  	object-fit: cover;
+  	opacity: 0.31;
+}
+.asdasdasdasdas-1-icon {
+  	position: absolute;
+  	top: 957px;
+  	left: -49px;
+  	width: 2022px;
+  	height: 673px;
+  	object-fit: cover;
+  	opacity: 0.58;
+}
+.mask-group {
+  	position: absolute;
+  	top: 183px;
+  	left: 1156px;
+  	width: 463.6px;
+  	height: 606px;
+}
+.mask-group-child {
+  	position: absolute;
+  	top: -69.11px;
+  	left: -113.78px;
+  	border-radius: 4px;
+  	width: 691.1px;
+  	height: 680.2px;
+  	object-fit: contain;
+}
+.unicvedubr {
+  	position: absolute;
+  	top: 108px;
+  	left: 1209px;
+  	line-height: 100%;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 107px;
+  	height: 17px;
+  	cursor: pointer;
+}
+.desktop-2-inner {
+  	position: absolute;
+  	top: 107.58px;
+  	left: 1342.14px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 17.5px;
+}
+.sobre-o-unicv {
+  	position: absolute;
+  	top: 108px;
+  	left: 1364px;
+  	line-height: 100%;
+  	font-weight: 500;
+  	color: rgba(255, 255, 255, 0.5);
+  	display: inline-block;
+  	width: 120px;
+  	height: 17px;
+  	cursor: pointer;
+}
+.vector-icon {
+  	position: absolute;
+  	top: 107.58px;
+  	left: 1505.02px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 17.5px;
+}
+.about-glowpng-icon {
+  	position: absolute;
+  	top: -108px;
+  	left: 192px;
+  	width: 873px;
+  	height: 602px;
+  	object-fit: cover;
+  	opacity: 0.3;
+}
+.contato {
+  	position: absolute;
+  	top: 107.58px;
+  	left: 1541px;
+  	line-height: 100%;
+  	font-weight: 500;
+  	color: rgba(255, 255, 255, 0.5);
+  	display: inline-block;
+  	width: 74.3px;
+  	height: 17.5px;
+  	cursor: pointer;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 323px;
+  	left: 478px;
+  	border-radius: 4px;
+  	background-color: #fff;
+  	width: 4px;
+  	height: 155px;
+}
+.group-icon {
+  	position: absolute;
+  	top: 95px;
+  	left: 300px;
+  	width: 948px;
+  	height: 462.8px;
+}
+.objeto-inteligente-de-vetor-1 {
+  	position: absolute;
+  	top: 153px;
+  	left: 478px;
+  	width: 224px;
+  	height: 135px;
+  	object-fit: cover;
+}
+.o-unicv-est-container {
+  	position: absolute;
+  	top: 319px;
+  	left: 503px;
+  	font-size: 22px;
+  	line-height: 140%;
+  	display: inline-block;
+  	width: 605px;
+  	height: 250px;
+  	font-family: Inter;
+}
+.o-unicv-est {
+  	font-weight: 500;
+}
+.representante-autorizado-e {
+  	font-weight: 800;
+  	color: #00ff6a;
+}
+.desktop-2-child2 {
+  	position: absolute;
+  	top: 863px;
+  	left: 0px;
+  	width: 1920px;
+  	height: 93px;
+}
+.desktop-2-child3 {
+  	position: absolute;
+  	height: 0.83%;
+  	width: 2.4%;
+  	top: 33.25%;
+  	right: 48.8%;
+  	bottom: 65.92%;
+  	left: 48.8%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.desktop-2-child4 {
+  	position: absolute;
+  	height: 0.83%;
+  	width: 2.4%;
+  	top: 57.9%;
+  	right: 48.8%;
+  	bottom: 41.27%;
+  	left: 48.8%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.desktop-2-child5 {
+  	position: absolute;
+  	top: 117px;
+  	left: 457px;
+  	background-color: #626262;
+  	width: 724px;
+  	height: 1px;
+}
+.imagebackgroundborderblur-icon {
+  	position: absolute;
+  	height: calc(100% - 5317px);
+  	width: calc(100% - 1740px);
+  	top: 629px;
+  	right: 1241px;
+  	bottom: 4688px;
+  	left: 499px;
+  	border-radius: 15px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.imagebackgroundborderblur-icon2 {
+  	position: absolute;
+  	height: calc(100% - 5317px);
+  	width: calc(100% - 1741px);
+  	top: 629px;
+  	right: 1043px;
+  	bottom: 4688px;
+  	left: 698px;
+  	border-radius: 15px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.imagebackgroundborderblur-icon3 {
+  	position: absolute;
+  	height: calc(100% - 5317px);
+  	width: calc(100% - 1740px);
+  	top: 629px;
+  	right: 844px;
+  	bottom: 4688px;
+  	left: 896px;
+  	border-radius: 15px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.vector-icon2 {
+  	position: absolute;
+  	height: 0.32%;
+  	width: 0.8%;
+  	top: 2.08%;
+  	right: 30.97%;
+  	bottom: 97.6%;
+  	left: 68.23%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: contain;
+}
+.modelo-flexvel-e-container {
+  	position: absolute;
+  	top: 764px;
+  	left: 715px;
+  	font-size: 13px;
+  	line-height: 140%;
+  	text-align: center;
+  	display: inline-block;
+  	width: 145px;
+  	font-family: 'Monument Extended';
+}
+.flexvel-e-inovador {
+  	color: #53f848;
+}
+.renda-extra-com-container {
+  	position: absolute;
+  	top: 762px;
+  	left: 900px;
+  	font-size: 13px;
+  	line-height: 140%;
+  	text-align: center;
+  	display: inline-block;
+  	width: 172px;
+  	font-family: 'Monument Extended';
+}
+.renda-extra {
+  	font-family: 'Monument Extended';
+}
+.ganho-na-matrcula-container {
+  	position: absolute;
+  	top: 758px;
+  	left: 507px;
+  	font-size: 13px;
+  	line-height: 140%;
+  	text-align: center;
+  	display: inline-block;
+  	width: 163px;
+  	font-family: 'Monument Extended';
+}
+.renda-recorrente {
+  	color: #55f849;
+}
+.backgroundborderoverlayblur {
+  	position: absolute;
+  	height: 1.12%;
+  	width: 16.04%;
+  	top: 8.24%;
+  	right: 18.39%;
+  	bottom: 90.64%;
+  	left: 65.57%;
+  	backdrop-filter: blur(13.2px);
+  	border-radius: 10px;
+  	background: linear-gradient(97.85deg, rgba(13, 13, 13, 0.51) 3.51%, rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0.4));
+  	border: 1px solid #0ee37d;
+  	box-sizing: border-box;
+  	font-family: Montserrat;
+}
+.icon-featuresvg {
+  	position: absolute;
+  	top: 16px;
+  	left: 15px;
+  	width: 30px;
+  	height: 30px;
+}
+.heading-3 {
+  	position: absolute;
+  	top: 9px;
+  	left: 49px;
+  	line-height: 21px;
+  	font-weight: 900;
+  	display: flex;
+  	align-items: center;
+  	width: 259px;
+  	height: 33px;
+}
+.ganho-na-matrcula-container2 {
+  	position: absolute;
+  	top: 25px;
+  	left: 49px;
+  	font-size: 13px;
+  	line-height: 140%;
+  	font-weight: 600;
+  	font-family: Inter;
+  	display: flex;
+  	align-items: center;
+  	width: 242.7px;
+  	height: 33px;
+}
+.desktop-2-child6 {
+  	position: absolute;
+  	height: 1.68%;
+  	width: 3.24%;
+  	top: 11.8%;
+  	right: 57.49%;
+  	bottom: 86.52%;
+  	left: 39.27%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.usd-circle-7653265-1-icon {
+  	position: absolute;
+  	top: 652px;
+  	left: 940px;
+  	width: 93px;
+  	height: 92px;
+}
+.money-coin-transfer-19019308-1-icon {
+  	position: absolute;
+  	top: 652px;
+  	left: 540px;
+  	width: 97px;
+  	height: 97px;
+}
+.apresentacao-blurpng-icon2 {
+  	position: absolute;
+  	height: 20.05%;
+  	width: 48.33%;
+  	top: 16.16%;
+  	right: 78.33%;
+  	bottom: 63.78%;
+  	left: -26.67%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.apresentacao-blurpng-icon3 {
+  	position: absolute;
+  	height: 23.75%;
+  	width: 57.24%;
+  	top: 32.62%;
+  	right: -27.6%;
+  	bottom: 43.64%;
+  	left: 70.36%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.apresentacao-blurpng-icon4 {
+  	position: absolute;
+  	height: 23.28%;
+  	width: 56.09%;
+  	top: 43.67%;
+  	right: 70.57%;
+  	bottom: 33.05%;
+  	left: -26.67%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.apresentacao-blurpng-icon5 {
+  	position: absolute;
+  	height: 23.28%;
+  	width: 56.09%;
+  	top: 70.14%;
+  	right: -22.81%;
+  	bottom: 6.59%;
+  	left: 66.72%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.d5b68965-1-10ff07q000000000000-icon {
+  	position: absolute;
+  	top: 1038px;
+  	left: 1101px;
+  	border-radius: 35px;
+  	width: 518px;
+  	height: 260px;
+  	object-fit: cover;
+}
+.desktop-2-child7 {
+  	position: absolute;
+  	top: 1056px;
+  	left: 400px;
+  	background-color: #1a1a1a;
+  	border: 1px solid #b9b9b9;
+  	box-sizing: border-box;
+  	width: 647px;
+  	height: 61px;
+}
+.desktop-2-child8 {
+  	position: absolute;
+  	top: 1342px;
+  	left: 865px;
+  	background-color: #171717;
+  	border: 1px solid #a8a8a8;
+  	box-sizing: border-box;
+  	width: 647px;
+  	height: 61px;
+}
+.o-que {
+  	position: absolute;
+  	top: 1067px;
+  	left: 411px;
+  	font-size: 28px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	text-align: center;
+}
+.o-unicv-est2 {
+  	position: absolute;
+  	top: 1122px;
+  	left: 416px;
+  	font-size: 20px;
+  	line-height: 140%;
+  	font-weight: 600;
+  	white-space: pre-wrap;
+  	display: inline-block;
+  	width: 632px;
+  	height: 160px;
+}
+.usd-circle-7653265-2-parent {
+  	position: absolute;
+  	top: 1356px;
+  	left: 311px;
+  	width: 1239px;
+  	height: 3277px;
+  	text-align: center;
+  	font-size: 15px;
+}
+.usd-circle-7653265-2-icon {
+  	position: absolute;
+  	top: 208px;
+  	left: 571px;
+  	width: 29px;
+  	height: 28px;
+}
+.container {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 35px;
+  	background-color: #3c3c3c;
+  	width: 517px;
+  	height: 308px;
+}
+.vector-icon3 {
+  	position: absolute;
+  	height: 29.55%;
+  	top: 35.06%;
+  	bottom: 35.39%;
+  	left: calc(50% - 45.5px);
+  	max-height: 100%;
+  	width: 92px;
+}
+.rectangle-parent {
+  	position: absolute;
+  	top: 3000px;
+  	left: 42px;
+  	width: 267px;
+  	height: 277px;
+}
+.group-child {
+  	position: absolute;
+  	top: 102px;
+  	left: 2px;
+  	filter: blur(29.53px);
+  	border-radius: 10.94px;
+  	background-color: #27c281;
+  	width: 263px;
+  	height: 73px;
+}
+.group-item {
+  	position: absolute;
+  	top: 102px;
+  	left: 2px;
+  	border-radius: 10.94px;
+  	background-color: #27c281;
+  	width: 263px;
+  	height: 73px;
+}
+.tenho-outra-dvida {
+  	position: absolute;
+  	top: 146px;
+  	left: 17px;
+  	letter-spacing: 0.16em;
+  	font-weight: 900;
+  	display: inline-block;
+  	width: 233px;
+  	height: 67px;
+}
+.vector-icon4 {
+  	position: absolute;
+  	height: 11.91%;
+  	width: 11.99%;
+  	top: 38.27%;
+  	right: 44.19%;
+  	bottom: 49.82%;
+  	left: 43.82%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.ficou-com-alguma-container {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	font-size: 20px;
+  	font-weight: 600;
+  	text-align: left;
+  	display: inline-block;
+  	width: 267px;
+  	height: 277px;
+}
+.como-funciona {
+  	position: absolute;
+  	top: 0px;
+  	left: 571px;
+  	font-size: 28px;
+  	line-height: 140%;
+  	font-weight: 800;
+}
+.cadastre-se-como-representante-container {
+  	position: absolute;
+  	top: 57px;
+  	left: 607px;
+  	font-size: 20px;
+  	line-height: 237%;
+  	font-weight: 600;
+  	text-align: left;
+  	display: inline-block;
+  	width: 632px;
+  	height: 261px;
+}
+.vector-icon5 {
+  	position: absolute;
+  	height: 1.07%;
+  	width: 2.34%;
+  	top: 1.92%;
+  	right: 51.57%;
+  	bottom: 97.01%;
+  	left: 46.09%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.group-inner {
+  	position: absolute;
+  	top: 603px;
+  	left: 46px;
+  	background-color: rgba(217, 217, 217, 0.3);
+  	width: 1px;
+  	height: 1314px;
+}
+.objects-column-10742983-1-icon {
+  	position: absolute;
+  	height: 0.88%;
+  	width: 2.34%;
+  	top: 3.45%;
+  	right: 51.57%;
+  	bottom: 95.67%;
+  	left: 46.09%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.vector-icon6 {
+  	position: absolute;
+  	height: 0.88%;
+  	width: 2.02%;
+  	top: 4.88%;
+  	right: 51.82%;
+  	bottom: 94.23%;
+  	left: 46.17%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.quem-pode-participar-parent {
+  	position: absolute;
+  	top: 1854px;
+  	left: 355px;
+  	width: 1259.3px;
+  	height: 735px;
+  	font-family: 'Monument Extended';
+}
+.quem-pode-participar {
+  	position: absolute;
+  	top: 0px;
+  	left: 24px;
+  	font-size: 64px;
+  	line-height: 64px;
+  	display: flex;
+  	font-family: Poppins;
+  	align-items: center;
+  	width: 701px;
+  	height: 260px;
+}
+.vertical-divider {
+  	position: absolute;
+  	top: 80px;
+  	left: 0px;
+  	background: linear-gradient(168.75deg, #1cd8b6, #4df1b5 39.07%, #39f18e 89.32%);
+  	width: 5px;
+  	height: 109px;
+}
+.imagebackgroundborderblur-icon4 {
+  	position: absolute;
+  	height: calc(100% - 527px);
+  	width: calc(100% - 1079.3px);
+  	top: 238px;
+  	right: 1055.3px;
+  	bottom: 289px;
+  	left: 24px;
+  	border-radius: 15px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.imagebackgroundborderblur-icon5 {
+  	position: absolute;
+  	height: calc(100% - 527px);
+  	width: calc(100% - 1079.3px);
+  	top: 238px;
+  	right: 834.3px;
+  	bottom: 289px;
+  	left: 245px;
+  	border-radius: 15px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.imagebackgroundborderblur-icon6 {
+  	position: absolute;
+  	height: calc(100% - 527px);
+  	width: calc(100% - 1079.3px);
+  	top: 238px;
+  	right: 613.3px;
+  	bottom: 289px;
+  	left: 466px;
+  	border-radius: 15px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	object-fit: cover;
+}
+.ser-mei-ativo-container {
+  	position: absolute;
+  	top: 258px;
+  	left: 41px;
+  	font-size: 40px;
+  	line-height: 140%;
+  	display: inline-block;
+  	width: 163px;
+}
+.ter-vontade-de-container {
+  	position: absolute;
+  	top: 278px;
+  	left: 266px;
+  	line-height: 140%;
+  	display: inline-block;
+  	width: 148px;
+}
+.no-necessrio {
+  	position: absolute;
+  	top: 294px;
+  	left: 487px;
+  	line-height: 140%;
+  	display: inline-block;
+  	width: 148px;
+}
+.hpmem-1-icon {
+  	position: absolute;
+  	top: 51px;
+  	left: 679.66px;
+  	width: 579.7px;
+  	height: 684px;
+  	object-fit: cover;
+}
+.button-frame {
+  	position: absolute;
+  	width: calc(100% - 898.3px);
+  	top: 608px;
+  	right: 721.3px;
+  	left: 177px;
+  	height: 63px;
+  	text-align: center;
+  	font-size: 14px;
+}
+.leve-educao-para-container {
+  	position: absolute;
+  	top: 464px;
+  	left: 52px;
+  	font-size: 30px;
+  	line-height: 140%;
+  	text-align: center;
+  	display: inline-block;
+  	width: 612px;
+  	height: 255px;
+  	font-family: Poppins;
+}
+.leve-educao {
+  	font-weight: 700;
+  	font-family: Poppins;
+}
+.para-todo-o {
+  	font-weight: 600;
+}
+.ganhe-autonomia-renda {
+  	font-weight: 800;
+  	color: #53f848;
+}
+.perguntas-frequentes {
+  	position: absolute;
+  	top: 4089px;
+  	left: calc(50% - 354px);
+  	font-size: 64px;
+  	letter-spacing: -0.13px;
+  	line-height: 24px;
+  	font-weight: 800;
+  	font-family: Inter;
+  	display: flex;
+  	align-items: center;
+  	width: 708px;
+  	height: 154px;
+}
+.depoimentos-de-representantes {
+  	position: absolute;
+  	top: 3286px;
+  	left: calc(50% - 324px);
+  	font-size: 40px;
+  	letter-spacing: -0.13px;
+  	line-height: 24px;
+  	font-weight: 800;
+  	font-family: Inter;
+  	display: flex;
+  	align-items: center;
+  	width: 649px;
+  	height: 154px;
+}
+.group-div {
+  	position: absolute;
+  	height: 7.29%;
+  	width: 49.17%;
+  	top: 77.05%;
+  	right: 15.94%;
+  	bottom: 15.66%;
+  	left: 34.9%;
+  	font-size: 18px;
+  	color: #02260e;
+  	font-family: Inter;
+}
+.frame-parent {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+}
+.existe-contrato-parent {
+  	position: absolute;
+  	height: 12.07%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 87.93%;
+  	left: 0%;
+  	background-color: #2ab66f;
+  	display: flex;
+  	align-items: center;
+  	padding: 13px;
+  	box-sizing: border-box;
+  	gap: 8px;
+}
+.existe-contrato {
+  	width: 1011px;
+  	position: relative;
+  	letter-spacing: -0.13px;
+  	line-height: 24px;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	height: 30px;
+  	flex-shrink: 0;
+}
+.icon {
+  	width: 30px;
+  	position: relative;
+  	height: 30px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	mix-blend-mode: normal;
+}
+.quais-so-as-modalidades-de-cu-wrapper {
+  	position: absolute;
+  	height: 12.07%;
+  	width: 100%;
+  	top: 14.65%;
+  	right: 0%;
+  	bottom: 73.27%;
+  	left: 0%;
+  	background-color: #2ab66f;
+  	display: flex;
+  	align-items: center;
+  	padding: 13px;
+  	box-sizing: border-box;
+}
+.como-funciona-a-forma-de-ganho-wrapper {
+  	position: absolute;
+  	height: 12.07%;
+  	width: 100%;
+  	top: 29.31%;
+  	right: 0%;
+  	bottom: 58.62%;
+  	left: 0%;
+  	background-color: #2ab66f;
+  	display: flex;
+  	align-items: center;
+  	padding: 13px;
+  	box-sizing: border-box;
+}
+.preciso-ter-cnpj-para-ser-repr-wrapper {
+  	position: absolute;
+  	height: 12.07%;
+  	width: 100%;
+  	top: 43.96%;
+  	right: 0%;
+  	bottom: 43.96%;
+  	left: 0%;
+  	background-color: #2ab66f;
+  	display: flex;
+  	align-items: center;
+  	padding: 13px;
+  	box-sizing: border-box;
+}
+.como-funciona-o-suporte-ao-alu-wrapper {
+  	position: absolute;
+  	height: 12.07%;
+  	width: 100%;
+  	top: 58.62%;
+  	right: 0%;
+  	bottom: 29.31%;
+  	left: 0%;
+  	background-color: #2ab66f;
+  	display: flex;
+  	align-items: center;
+  	padding: 13px;
+  	box-sizing: border-box;
+}
+.posso-vender-em-qualquer-lugar-wrapper {
+  	position: absolute;
+  	height: 12.07%;
+  	width: 100%;
+  	top: 73.27%;
+  	right: 0%;
+  	bottom: 14.65%;
+  	left: 0%;
+  	background-color: #2ab66f;
+  	display: flex;
+  	align-items: center;
+  	padding: 13px;
+  	box-sizing: border-box;
+}
+.necessrio-ter-uma-estrutura-f-wrapper {
+  	position: absolute;
+  	height: 12.07%;
+  	width: 100%;
+  	top: 87.93%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+  	background-color: #2ab66f;
+  	display: flex;
+  	align-items: center;
+  	padding: 13px;
+  	box-sizing: border-box;
+}
+.desktop-2-inner2 {
+  	position: absolute;
+  	top: 2600px;
+  	left: 634px;
+  	font-size: 18px;
+  	font-family: Inter;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 658px;
+  	height: 538px;
+}
+.group-child2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 62px;
+  	background-color: #202020;
+  	border: 1px solid #2ab66f;
+  	box-sizing: border-box;
+  	width: 658px;
+  	height: 538px;
+}
+.group-parent {
+  	position: absolute;
+  	width: calc(100% - 63px);
+  	top: 69px;
+  	right: 29px;
+  	left: 34px;
+  	height: 439.6px;
+}
+.button-wrapper2 {
+  	position: absolute;
+  	width: calc(100% - 342px);
+  	top: 395.42px;
+  	right: 195px;
+  	left: 147px;
+  	height: 44.2px;
+  	text-align: center;
+  	font-size: 13px;
+  	font-family: 'Monument Extended';
+}
+.button4 {
+  	position: absolute;
+  	width: 100%;
+  	top: 0px;
+  	right: 0px;
+  	left: 0px;
+  	box-shadow: 0px 0px 70px rgba(26, 226, 118, 0.5);
+  	border-radius: 45px;
+  	background: linear-gradient(90.63deg, #0f5641, #217d44 57.26%, #2aba73 92.01%);
+  	height: 44.2px;
+  	cursor: pointer;
+}
+.entrar-em-contato {
+  	position: absolute;
+  	top: 3.58px;
+  	left: -43px;
+  	letter-spacing: 2px;
+  	line-height: 24px;
+  	text-transform: uppercase;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 340px;
+  	height: 38px;
+}
+.rectangle-container {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 595px;
+  	height: 38px;
+}
+.group-child3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 102px;
+  	background-color: #d9d9d9;
+  	width: 493px;
+  	height: 38px;
+}
+.group-child4 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #216641;
+  	width: 102px;
+  	height: 38px;
+}
+.nome {
+  	position: absolute;
+  	top: 5px;
+  	left: 16px;
+  	letter-spacing: -0.13px;
+  	line-height: 24px;
+  	font-weight: 800;
+}
+.rectangle-parent2 {
+  	position: absolute;
+  	top: 63px;
+  	left: 0px;
+  	width: 595px;
+  	height: 38px;
+}
+.telefone {
+  	position: absolute;
+  	top: 7px;
+  	left: 16px;
+  	letter-spacing: -0.13px;
+  	line-height: 24px;
+  	font-weight: 800;
+}
+.rectangle-parent3 {
+  	position: absolute;
+  	top: 126px;
+  	left: 0px;
+  	width: 595px;
+  	height: 38px;
+}
+.e-mail {
+  	position: absolute;
+  	top: 4px;
+  	left: 16px;
+  	letter-spacing: -0.13px;
+  	line-height: 24px;
+  	font-weight: 800;
+}
+.rectangle-parent4 {
+  	position: absolute;
+  	top: 189px;
+  	left: 0px;
+  	width: 595px;
+  	height: 38px;
+}
+.rectangle-parent5 {
+  	position: absolute;
+  	top: 252px;
+  	left: 0px;
+  	width: 595px;
+  	height: 38px;
+}
+.rectangle-parent6 {
+  	position: absolute;
+  	top: 315px;
+  	left: 0px;
+  	width: 595px;
+  	height: 38px;
+}
+.no-obrigatrio {
+  	position: absolute;
+  	top: 14px;
+  	left: 494px;
+  	font-size: 11px;
+  	letter-spacing: -0.13px;
+  	line-height: 24px;
+  	font-weight: 800;
+  	color: #ff0000;
+  	display: flex;
+  	align-items: center;
+  	width: 101px;
+  	height: 17px;
+}
+.rectangle-parent7 {
+  	position: absolute;
+  	top: 4738px;
+  	left: -6px;
+  	width: 1926px;
+  	height: 787px;
+}
+.group-child15 {
+  	position: absolute;
+  	top: 528px;
+  	left: 6px;
+  	background-color: #171717;
+  	width: 1920px;
+  	height: 259px;
+}
+.centro-universitrio-cidade {
+  	position: absolute;
+  	top: 664px;
+  	left: 326px;
+}
+.frame-group {
+  	position: absolute;
+  	top: 628px;
+  	left: 1504px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.ellipse-parent {
+  	display: flex;
+  	align-items: flex-start;
+  	position: relative;
+  	gap: 10px;
+}
+.frame-child {
+  	width: 48px;
+  	position: relative;
+  	border-radius: 50%;
+  	border: 1px solid rgba(255, 255, 255, 0.16);
+  	box-sizing: border-box;
+  	height: 48px;
+  	z-index: 0;
+}
+.social-icon {
+  	width: 24px;
+  	position: absolute;
+  	margin: 0 !important;
+  	top: 12px;
+  	left: 12px;
+  	height: 24px;
+  	z-index: 1;
+}
+.ellipse-container {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #1a1a1a;
+  	border: 1px solid rgba(255, 255, 255, 0.5);
+  	box-sizing: border-box;
+  	width: 1926px;
+  	height: 532px;
+  	overflow: hidden;
+  	font-size: 30px;
+  	font-family: Inter;
+}
+.frame-inner {
+  	position: absolute;
+  	top: -429px;
+  	left: calc(50% - 422px);
+  	filter: blur(254px);
+  	border-radius: 50%;
+  	background-color: rgba(0, 191, 115, 0.16);
+  	width: 807px;
+  	height: 807px;
+}
+.group-wrapper {
+  	position: absolute;
+  	top: 431px;
+  	left: 726px;
+  	width: 474px;
+  	height: 55.2px;
+  	font-size: 24px;
+}
+.circle-envelope-8034055-1-parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 474px;
+  	height: 55.2px;
+}
+.circle-envelope-8034055-1-icon {
+  	position: absolute;
+  	top: 0.23px;
+  	left: 0px;
+  	width: 55px;
+  	height: 55px;
+}
+.novosnegociosunicvunicvedu {
+  	position: absolute;
+  	top: 0px;
+  	left: 67px;
+  	letter-spacing: -0.13px;
+  	line-height: 24px;
+  	display: flex;
+  	align-items: center;
+  	width: 407px;
+  	height: 54px;
+}
+.campus-sede-av-horcio-container {
+  	position: absolute;
+  	top: 143px;
+  	left: 316px;
+  	letter-spacing: -0.13px;
+  	display: flex;
+  	align-items: center;
+  	width: 457px;
+}
+.blank-line {
+  	margin: 0;
+  	line-height: 64px;
+}
+.campus-sede {
+  	margin: 0;
+  	font-size: 20px;
+}
+.campus-sede2 {
+  	line-height: 43px;
+}
+.campus-sede3 {
+  	font-weight: 900;
+}
+.campus-ii3 {
+  	font-weight: 800;
+}
+.unidades-maring {
+  	position: absolute;
+  	top: 143px;
+  	left: calc(50% + 294px);
+  	letter-spacing: -0.13px;
+  	line-height: 64px;
+  	display: flex;
+  	align-items: center;
+  	width: 377px;
+}
+.unidades-maring2 {
+  	position: absolute;
+  	top: 143px;
+  	left: calc(50% - 647px);
+  	letter-spacing: -0.13px;
+  	line-height: 64px;
+  	display: flex;
+  	align-items: center;
+  	width: 377px;
+}
+.sede-administrativa-av-horci-container {
+  	position: absolute;
+  	top: 200px;
+  	left: 1188px;
+  	font-size: 20px;
+  	letter-spacing: -0.13px;
+  	line-height: 43px;
+  	text-align: right;
+  	display: flex;
+  	align-items: center;
+  	width: 424px;
+}
+.sede-administrativa {
+  	margin: 0;
+  	font-weight: 800;
+}
+.ncleo-de-atendimento-container {
+  	position: absolute;
+  	top: 286px;
+  	left: 1068px;
+  	font-size: 20px;
+  	letter-spacing: -0.13px;
+  	line-height: 43px;
+  	text-align: right;
+  	display: flex;
+  	align-items: center;
+  	width: 544px;
+}
+.button5 {
+  	position: absolute;
+  	top: 47px;
+  	left: calc(50% - 176px);
+  	border-radius: 100px;
+  	border: 1px solid #fff;
+  	box-sizing: border-box;
+  	width: 352px;
+  	height: 80px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 16px 32px;
+  	font-size: 24px;
+  	font-family: Poppins;
+}
+.informaes-e-contato {
+  	position: relative;
+  	line-height: 150%;
+}
+.group-child16 {
+  	position: absolute;
+  	height: 16.71%;
+  	width: 22.49%;
+  	top: 75.22%;
+  	right: 38.58%;
+  	bottom: 8.07%;
+  	left: 38.94%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.group-container {
+  	position: absolute;
+  	top: 3481px;
+  	left: 312px;
+  	width: 1298px;
+  	height: 523px;
+  	text-align: center;
+  	font-size: 14px;
+  	color: rgba(255, 255, 255, 0.63);
+}
+.group-parent2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1298px;
+  	height: 469px;
+}
+.comment-parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 460px;
+  	width: 376px;
+  	height: 403px;
+}
+.comment {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 376px;
+  	height: 403px;
+}
+.comment-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	backdrop-filter: blur(60px);
+  	border-radius: 30px;
+  	background-color: rgba(255, 255, 255, 0.05);
+  	width: 376px;
+  	height: 403px;
+}
+.chat-bubble-icon {
+  	position: absolute;
+  	top: 363px;
+  	left: 324.31px;
+  	width: 18px;
+  	height: 18px;
+}
+.eu-j-trabalhava-container {
+  	position: absolute;
+  	top: 178px;
+  	left: 17px;
+  	line-height: 19px;
+  	font-weight: 300;
+  	display: inline-block;
+  	width: 341px;
+  	height: 84px;
+}
+.person {
+  	position: absolute;
+  	top: 34.16px;
+  	left: 61.19px;
+  	width: 252.9px;
+  	height: 117.8px;
+  	font-size: 24px;
+  	color: #fff;
+  	font-family: Inter;
+}
+.image-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 100.76px;
+  	border-radius: 50%;
+  	width: 51.6px;
+  	height: 51.6px;
+  	object-fit: cover;
+}
+.marcos {
+  	position: absolute;
+  	top: 80.06px;
+  	left: 0px;
+  	line-height: 30px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 252.9px;
+  	height: 11.2px;
+}
+.anos-recifepe {
+  	position: absolute;
+  	top: 110.65px;
+  	left: 17.34px;
+  	font-size: 16px;
+  	line-height: 30px;
+  	font-weight: 300;
+  	font-family: Poppins;
+  	color: rgba(255, 255, 255, 0.63);
+  	display: inline-block;
+  	width: 219.3px;
+  	height: 7.1px;
+}
+.stars {
+  	position: absolute;
+  	top: 364.71px;
+  	left: 42.21px;
+  	width: 98.3px;
+  	height: 14.6px;
+}
+.stars-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 0.71px;
+  	width: 14.6px;
+  	height: 14.6px;
+}
+.stars-item {
+  	position: absolute;
+  	top: 0px;
+  	left: 20.93px;
+  	border-radius: 0.71px;
+  	width: 14.6px;
+  	height: 14.6px;
+}
+.stars-inner {
+  	position: absolute;
+  	top: 0px;
+  	left: 41.86px;
+  	border-radius: 0.71px;
+  	width: 14.6px;
+  	height: 14.6px;
+}
+.star-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 62.79px;
+  	border-radius: 0.71px;
+  	width: 14.6px;
+  	height: 14.6px;
+}
+.stars-child2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 83.72px;
+  	border-radius: 0.71px;
+  	width: 14.6px;
+  	height: 14.6px;
+}
+.group-child17 {
+  	position: absolute;
+  	height: 9.83%;
+  	width: 10.51%;
+  	top: 5.21%;
+  	right: 6.25%;
+  	bottom: 84.96%;
+  	left: 83.24%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.group-child18 {
+  	position: absolute;
+  	top: 34px;
+  	left: 0px;
+  	width: 1298px;
+  	height: 435px;
+}
+.group-frame {
+  	position: absolute;
+  	top: 120px;
+  	left: 920px;
+  	width: 376px;
+  	height: 403px;
+}
+.group-wrapper3 {
+  	position: absolute;
+  	top: 120px;
+  	left: 0px;
+  	width: 376px;
+  	height: 403px;
+}
+.desktop-2-child9 {
+  	position: absolute;
+  	height: 6.84%;
+  	width: 1.56%;
+  	top: 77.32%;
+  	right: 16.3%;
+  	bottom: 15.84%;
+  	left: 82.14%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+
